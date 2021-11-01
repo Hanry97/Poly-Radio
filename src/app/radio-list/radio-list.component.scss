@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+
+//  ===== Global Values =====
+$color-bg: #F2D7D3;
+$color-light: #fff9e1;
+$color-black: #252120;
+$color-gray: rgb(68, 68, 68);
+
+
+
+// ===== Player - List =====
+.list_wrapper {
+	height: calc(100% - 310px);
+	// overflow: hidden;
+	overflow: auto;
+	-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.list {
+	padding: 20px 0;
+
+	.list_item {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		width: 100%;
+		height: 74px;
+		transition: 0.4s;
+	}		
+
+	.thumb {
+		width: 50px;
+		height: 50px;
+		margin: 0 12px 0 31px;
+		border-radius: 50%;
+		position: relative;
+		opacity: 0.8;
+		background-size: cover;
+	}
+
+	.info {
+		max-width: 600px;
+		
+		.title {
+			font-size: 15px;
+  	  color: #fff;
+		}
+		
+		.artist {
+			font-size: 13px;
+			text-transform: uppercase;
+			color: #fff;
+		}
+	}
+}
+
+.list_item:hover {
+	background-color: rgba(0,0,0,0.03);
+}
+
+.list_item:active {
+	transform: scale(0.98);
+}
+
+// List Replace with JSON later
+.list {
+	.list_item:nth-child(1) {
+		.thumb{
+			background-image: url(https://i1.sndcdn.com/artworks-000167527289-p3zpfg-large.jpg);
+		}
+	}
+	
+	.list_item:nth-child(2) {
+		.thumb{
+			background-image: url(https://i1.sndcdn.com/artworks-000149308680-w9rj6a-large.jpg);
+		}
+	}
+	.list_item:nth-child(3) {
+		.thumb{
+			background-image: url(https://i1.sndcdn.com/artworks-000091003491-upr0rf-large.jpg);
+		}
+	}
+	.list_item:nth-child(4) {
+		.thumb{
+			background-image: url(https://i1.sndcdn.com/artworks-000125642440-o2ff73-large.jpg);
+		}
+	}
+	.list_item:nth-child(5) {
+		.thumb{
+			background-image: url(https://i1.sndcdn.com/artworks-000174340505-wv6dl1-large.jpg);
+		}
+	}
+	.list_item:nth-child(6) {
+		.thumb{
+			background-image: url(https://i1.sndcdn.com/artworks-000169142537-e22x2o-large.jpg);
+		}
+	}
+	.list_item:nth-child(7) {
+		.thumb{
+			background-image: url(https://i1.sndcdn.com/artworks-000180119811-wgpequ-large.jpg);
+		}
+	}
+	.list_item:nth-child(8) {
+		.thumb{
+			background-image: url(https://i1.sndcdn.com/artworks-000133986066-hf1rz6-large.jpg);
+		}
+	}
+}
+
+.selected {
+	background-color: rgba(224,186,171,0.19);
+	
+	&:hover {
+		background-color: rgba(224,186,171,0.3);
+	}
+	
+	.info {
+		.title {
+			color: #252120;
+			font-size: 15px;
+		}
+		.artist {
+			color: rgba(37,33,32,0.7);
+			font-size: 13px;
+   	 text-transform: uppercase;
+		}
+	}
+}
+
+

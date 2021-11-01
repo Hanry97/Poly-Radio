@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+$color-1: #f2f2ee;
+$color-2: #949792;
+$color-3: #bfb195;
+$color-4: #86715c;
+$color-5: #3c363a;
+$color-6: #191919;
+
+.search-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-grow: 1;
+    margin: 15px;
+    border-radius: 10px;
+	input {
+		width: 100%;
+		border: 0;
+		background: transparent;
+		padding: 1rem;
+        
+	}
+	input:focus {
+		outline: none;
+	}
+	svg {
+		width: 25px;
+		padding: 1rem;
+	}
+}
+.search-bar.white {
+	background: #fff;
+	svg {
+		fill: $color-5;
+	}
+}
+.search-bar.color-1 {
+	background: $color-1;
+	svg {
+		fill: $color-5;
+	}
+}

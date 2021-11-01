@@ -1,0 +1,17 @@
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+<div class="player">
+	    <canvas></canvas>
+		<div class="song">
+			<div class="artist">{{radio.name}}</div>
+			<div class="name">{{radio.frequence}} {{radio.contry}}</div>
+		</div>
+		<div class="playarea">
+			<div class="prevSong" (mouseup)="prevSong()"></div>
+			<div class="play" (mouseup)="radioPlay()"></div>
+			<div class="pause" (mouseup)="radioPause()"></div>
+			<div class="nextSong" (mouseup)="nextSong()"></div>
+		</div>
+		<div class="soundControl" (mouseup)="muteAudio()"></div>
+		<div class="time">00:00</div>
+	</div>

@@ -17,6 +17,7 @@ export class AppComponent {
   sidenav!: MatSidenav;
 
   radios: Radio[] = [];
+  radios_tmp: Radio[] = [];
   radio: any;
   nom:any;
 
@@ -41,18 +42,21 @@ export class AppComponent {
   ngOnInit(): void {
     this.rs.getListRadios().subscribe((response) => {
       this.radios = response;
+      this.radios_tmp = response;
       this.radio = this.radios[0];
     });
     
   }
 
   searchRadio(value:any) {
-    if (this.nom == "") {
-      this.ngOnInit();
-    } else {
-      this.radios = this.radios.filter(res => {
-        return res.name.toLowerCase().match(value.toLowerCase());
+    if (value == "") {
+      this.rs.getListRadios().subscribe((response) => {
+        this.radios = response;
       })
+    } else {
+      this.radios = this.radios_tmp.filter(res => {
+        return res.name.toLowerCase().match(value.toLowerCase());
+      });
     }
   }
 

@@ -27,7 +27,6 @@ export class CardComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(){
     $.getScript('assets/js/scripts.js');
     this.setRadio(this.radio.url);
-    console.log(this.radio.url);
   }
 
 setRadio(url:string){

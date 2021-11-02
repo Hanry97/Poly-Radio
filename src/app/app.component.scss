@@ -60,7 +60,6 @@ mat-sidenav-container {
 .frequence {
     margin-top: 2px;
     font-size: 0.7rem;
-    color: lightgrey;
 }
 
 mat-divider {
@@ -175,6 +174,7 @@ $color-gray: rgb(68, 68, 68);
 			font-size: 13px;
 			text-transform: uppercase;
 			color: #fff;
+      text-align: left;
 		}
 	}
 }

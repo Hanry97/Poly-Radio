@@ -63,6 +63,30 @@
             "imgPreview": "assets/img/RTSEspace2.png",
             "frequence" : "87.6",
             "contry" : "Suisse (Romande)"
+        },
+        {
+            "num": 123,
+            "name": "France Inter",
+            "url": "http://icecast.radiofrance.fr/franceinter-midfi.mp3",
+            "imgPreview": "assets/img/FranceInter.jpg",
+            "frequence" : "89.4",
+            "contry" : "France (Nationale)"
+        },
+        {
+            "num": 124,
+            "name": "Jazz Radio",
+            "url": "http://jazzradio.ice.infomaniak.ch/jazzradio-high.mp3",
+            "imgPreview": "assets/img/JazzRadio.jpg",
+            "frequence" : "86.2",
+            "contry" : "France"
+        },
+        {
+            "num": 125,
+            "name": "Nostalgie France",
+            "url": "http://scdn.nrjaudio.fm/adwz2/fr/30601/mp3_128.mp3?origine=fluxradios",
+            "imgPreview": "assets/img/NostalgieFrance.jpg",
+            "frequence" : "98.3",
+            "contry" : "France"
         }
     ]
 }

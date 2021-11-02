@@ -36,12 +36,14 @@ setRadio(url:string){
 radioPlay () {
 		(document.querySelector('.play') as HTMLElement).style.display = 'none';
 		(document.querySelector('.pause') as HTMLElement).style.display = 'inline-block';
+    (document.querySelector('.avatar') as HTMLElement).classList.add('loading');
 		this.audio.play();
 		this.isPlaying = true;
 }
 radioPause(){
     (document.querySelector('.play') as HTMLElement).style.display = 'inline-block';
 		(document.querySelector('.pause') as HTMLElement).style.display = 'none';
+    (document.querySelector('.avatar') as HTMLElement).classList.remove('loading');
 		this.audio.pause();
 		this.isPlaying = false;
 }

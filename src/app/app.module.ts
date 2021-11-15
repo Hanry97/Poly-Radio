@@ -20,13 +20,15 @@ import { MatDividerModule } from '@angular/material/divider';
 import { RadioListComponent } from './radio-list/radio-list.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { CardComponent } from './card/card.component';
+import { GlobeComponent } from './globe/globe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RadioListComponent,
     SearchBarComponent,
-    CardComponent
+    CardComponent,
+    GlobeComponent
   ],
   imports: [
     CommonModule,

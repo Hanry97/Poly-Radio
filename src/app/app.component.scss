@@ -138,8 +138,6 @@ $color-gray: rgb(68, 68, 68);
 	transform: scale(0.98);
 }
 
-// List Replace with JSON later
-
 
 .selected {
 	background-color: rgba(224,186,171,0.19);
@@ -161,6 +159,7 @@ $color-gray: rgb(68, 68, 68);
 	}
 }
 
+// Rotation image
 @keyframes rotation {
 	from {
 		-webkit-transform: rotate(0deg);
@@ -175,13 +174,3 @@ $color-gray: rgb(68, 68, 68);
 	-moz-animation: rotation 10s infinite linear;
   animation: rotation 10s infinite linear;
 }
-
-
-
-
-
-
-  
-
-
-

@@ -20,6 +20,7 @@ export class AppComponent {
   radios_tmp: Radio[] = [];
   radio: any;
   nom:any;
+  isOn = false;
 
   constructor(private observer: BreakpointObserver, public rs: RadioListService) {}
 

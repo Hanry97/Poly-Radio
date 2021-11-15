@@ -1,4 +1,4 @@
-    <mat-toolbar class="mat-elevation-z8">
+<mat-toolbar class="mat-elevation-z8">
   <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
       <mat-icon *ngIf="!sidenav.opened">
           menu
@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <app-card #cardRadio [radio]="radio" [radios]="radios" (someEvent)="changeRadio($event)"></app-card>
-                </div>
+                </div>    
             </div>
         </div>
     </mat-sidenav-content>    
